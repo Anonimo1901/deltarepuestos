@@ -8,7 +8,7 @@ function Gestionr() {
   return (
     <Main>
       <Titulo Titulo="Gestion Repuestos" />
-      <Table />
+      <Table columnas={["ID", "Descripcion", "Descripcion Adicional", "Categoria", "Subcategoria", "Peso", "Longitud"]} />
     </Main>
   );
 }

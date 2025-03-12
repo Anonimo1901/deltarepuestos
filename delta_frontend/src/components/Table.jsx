@@ -1,18 +1,30 @@
-import React from 'react';
+import React from "react";
 
-function Table() {
+function Table({ columnas }) {
   return (
-    <table className="">
-      <thead className="">
+    <table className="min-w-full table-auto border-collapse border border-gray-300">
+      <thead className="bg-gray-100">
         <tr>
-          <th className="">Columna 1</th>
-          <th className="">Columna 2</th>
+          {columnas.map((columna, index) => (
+            <th
+              key={index}
+              className="px-4 py-2 border border-gray-300 text-left text-gray-700 font-semibold"
+            >
+              {columna}
+            </th>
+          ))}
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td className="">Cosa 1</td>
-          <td className="">Cosa 2</td>
+        <tr className="hover:bg-gray-50">
+          {columnas.map((columna, index) => (
+            <td
+              key={index}
+              className="px-4 py-2 border border-gray-300 text-gray-700"
+            >
+              {columna}
+            </td>
+          ))}
         </tr>
       </tbody>
     </table>
