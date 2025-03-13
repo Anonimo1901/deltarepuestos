@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
       <Encabezado />
 
-      <Navbar />
+
 
       <Routes>
         <Route path="/" element={<Gestionr />} />

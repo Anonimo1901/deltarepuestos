@@ -1,9 +1,13 @@
 import React from 'react';
+import Navbar from "./Navbar";
+import Titulo from "./Titulo";
+
 function Encabezado(){
     return(
-        <header className='h-15 text-2xl font-light text-center grid items-center bg-red-600'>
-            <h1 className=''>Delta</h1>
+        <header className='text-sm font-normal p-8 grid items-center bg-slate-500 text-white'>
             
+            <Titulo Titulo="Delta Gestión"/>
+            <Navbar />
         </header>
     )
 }
